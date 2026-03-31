@@ -30,3 +30,19 @@ This project predicts loan default risk using Logistic Regression to help financ
 
 ## Business Impact
 This model can assist financial institutions in making data-driven loan approval decisions and minimizing credit risk.
+
+## Model Performance
+
+### ROC Curve
+![ROC curve](ROC_curve.jpg)
+
+### Confusion Matrix
+![Confusion matrix](Confusion_matrix.jpg)
+
+### Feature Importance
+![Feature importance](Feature_importance.jpg)
+
+## Key Insights
+- Loan-to-income ratio is the strongest predictor of default  
+- Customers with previous defaults show significantly higher risk  
+- Model performs well but misses some defaulters, indicating scope for recall improvement  
