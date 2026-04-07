@@ -1,37 +1,46 @@
 # Credit Risk Assessment using Machine Learning
 
 ## Overview
+
 This project predicts loan default risk using Logistic Regression to help financial institutions identify high-risk applicants and reduce potential losses.
 
 ## Objectives
+
 - Identify high-risk loan applicants  
 - Reduce financial losses for lenders  
 
 ## Workflow
-- Data Cleaning  
+
+- Data Cleaning (handling missing values using median imputation)  
 - Exploratory Data Analysis (EDA)  
-- Feature Engineering  
-- Model Building  
-- Evaluation (Accuracy, ROC-AUC, Confusion Matrix)  
+- Feature Engineering (one-hot encoding of categorical variables)  
+- Feature Scaling (StandardScaler)  
+- Model Building (Logistic Regression)  
+- Model Evaluation (Accuracy, ROC-AUC, Confusion Matrix, Classification Report) 
 
 ## Tools Used
+
 - Python  
 - Pandas  
 - NumPy  
 - Scikit-learn  
-- Matplotlib & Seaborn  
+- Matplotlib
+- Seaborn  
 
 ## Results
+
 - Achieved strong predictive performance (AUC ~0.87)  
 - Identified key risk factors such as:  
   - Loan-to-income ratio  
   - Credit history  
   - Previous defaults  
 
-## Business Impact
-This model can assist financial institutions in making data-driven loan approval decisions and minimizing credit risk.
-
 ## Model Performance
+
+- Accuracy: **86.19%**  
+- ROC-AUC Score: **~0.87**  
+
+## Visualizations
 
 ### ROC Curve
 ![ROC curve](ROC_curve.jpg)
@@ -43,6 +52,13 @@ This model can assist financial institutions in making data-driven loan approval
 ![Feature importance](Feature_importance.jpg)
 
 ## Key Insights
-- Loan-to-income ratio is the strongest predictor of default  
-- Customers with previous defaults show significantly higher risk  
-- Model performs well but misses some defaulters, indicating scope for recall improvement  
+
+- Loan-to-income ratio is the strongest predictor of default.  
+- Customers with lower income are more likely to default.  
+- Shorter credit history increases default risk.  
+- Previous defaults significantly increase future default probability.  
+- Higher interest rates are associated with higher risk.   
+
+## Business Impact
+
+This model can assist financial institutions in making data-driven loan approval decisions and minimizing credit risk.
